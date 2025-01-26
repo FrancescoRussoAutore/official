@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Russo - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Francesco Russo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-item"><img src="donne.jpg" alt="15 Donne"></div>
+        <div class="carousel-item"><img src="90.jpg" alt="90 Pillole Punk"></div>
+        <div class="carousel-item"><img src="fiume.jpg" alt="Sulle Sponde Opposte del Fiume"></div>
+        <div class="carousel-item"><img src="famiglia.jpg" alt="La Settimana di una Famiglia Pasticciona"></div>
+        <div class="carousel-item"><img src="spade.jpg" alt="15 Piccole Spade"></div>
+    </section>
+
+    <footer>
+        <p>Seguici su:</p>
+        <a href="https://www.instagram.com/frarusso_fr/" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/profile.php?id=100026179453844" target="_blank">Facebook</a>
+        <p>&copy; 2025 Francesco Russo. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script>
+        // Simple carousel logic
+        const items = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            items[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % items.length;
+            items[currentIndex].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Francesco Russo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contattami</h1>
+        <form id="contact-form" action="/" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Oggetto:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Seguici su:</p>
+        <a href="https://www.instagram.com/frarusso_fr/" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/profile.php?id=100026179453844" target="_blank">Facebook</a>
+        <p>&copy; 2025 Francesco Russo. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
